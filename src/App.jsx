@@ -195,31 +195,33 @@ function App() {
     <>
       <img src={logoEmpresa} className="logo" alt="Empresa logo" />
       <div className="envoltura">
-        {ArrayUsuarios}
-        <form onSubmit={funcionEnviar}>
-          <input
-            type="number"
-            value={numero1}
-            onChange={(e) => setNumero1(e.target.value)}
-            placeholder="add a number"
-          />
+        <h2>Empleados</h2>
+       <div className="usuarios">{ArrayUsuarios}</div> 
+        <div className="calculadora">
+          <h2>Calculadora</h2>
+          <form onSubmit={funcionEnviar}>
+            <input
+              type="number"
+              onChange={(e) => setNumero1(e.target.value)}
+              placeholder="add a number"
+            />
 
-          <input
-            type="number"
-            value={numero2}
-            onChange={(e) => setNumero2(e.target.value)}
-            placeholder="add a number"
-          />
-          <select value={funcion} onChange={(e) => setFuncion(e.target.value)}>
-            <option value="0">suma</option>
-            <option value="1">resta</option>
-            <option value="2">multiplicacion</option>
-            <option value="3">division</option>
-          </select>
+            <input
+              type="number"
+              onChange={(e) => setNumero2(e.target.value)}
+              placeholder="add a number"
+            />
+            <select value={funcion} onChange={(e) => setFuncion(e.target.value)}>
+              <option value="0">suma</option>
+              <option value="1">resta</option>
+              <option value="2">multiplicacion</option>
+              <option value="3">division</option>
+            </select>
 
-          <button type="submit">calcular</button>
-        </form>
-        <p>Resultado {resultado} </p>
+            <button type="submit">calcular</button>
+          </form>
+          <p>Resultado: {resultado} </p>
+        </div>
       </div>
       <footer>
         <p> Todos los derechos reservados.</p> <p>Coquetas INC © </p>{" "}

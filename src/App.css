@@ -1,22 +1,39 @@
 #root {
-  max-width: 1280px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
-
+/*
 .envoltura {
   display: inline;
 }
 
 .envoltura > div {
   display: inline-block;
-}
+}*/
 .envoltura{
+  width: 96%;
+  margin: 2%;
+}
+.usuarios{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.usuarios > div{
+  width: 15vw;
+  margin-bottom: 25px;
+}
+form{display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+select{
+  margin: 5px;
+  width: 169px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -29,6 +46,17 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: aliceblue;
+
+}
+
 
 @keyframes logo-spin {
   from {
