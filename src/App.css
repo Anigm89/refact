@@ -12,6 +12,10 @@
 .envoltura > div {
   display: inline-block;
 }
+.envoltura{
+  display: flex;
+  flex-direction: row;
+}
 
 .logo {
   height: 6em;
